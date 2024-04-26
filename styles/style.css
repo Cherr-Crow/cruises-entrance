@@ -473,6 +473,7 @@ body {
 }
 
 .tabs-content__item {
+    display: flex;
     padding-bottom: 16px;
     margin-bottom: 16px;
     align-items: flex-end;
@@ -501,7 +502,7 @@ body {
 
 .tabs-content__item {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
 }
 
@@ -519,16 +520,26 @@ body {
     max-width: 269px;
     width: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
 }
 
 .tabs-content__block a {
-    padding-left: 28px;
+    display: flex;
+    align-items: center;
+    padding-left: 44px;
     color: #0F7EE6;
     background-image: url(../images/icon-pdf.svg);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: 17px 1px;
+    height: 22px;
+
+    border-left: 1px solid #CECECE;
+}
+
+.tabs-content__block a {
+    padding-right: 16px;
+    border-right: 1px solid #CECECE;
 }
 
 .contract-success {
